@@ -98,3 +98,9 @@ eventName:
     types:
         - action1
         - action2
+
+push:
+    branches: [branch1]
+        - branch1 (main, dev-* (dev-stag), feat/** (feat/login, feat/auth/login))
+    paths:
+        - 'file-path'

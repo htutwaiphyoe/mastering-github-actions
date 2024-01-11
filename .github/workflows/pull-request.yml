@@ -1,7 +1,8 @@
-name: Events Demo 1
+name: Pull Request Workflow
 on:
   pull_request:
     types: opened
+    branches: [main, "dev-*", "feature/**"]
   workflow_dispatch:
 jobs:
   deploy:
