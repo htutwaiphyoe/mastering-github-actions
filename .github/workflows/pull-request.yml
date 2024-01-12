@@ -1,0 +1,27 @@
+name: Pull Request Workflow
+on:
+  pull_request:
+    types: opened
+    branches: [main, "dev-*", "feature/**"]
+  workflow_dispatch:
+  push:
+    branches: [main, "dev-*", "feature/**"]
+    paths-ignore:
+      - ".github/workflows/*"
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./the-complete-guide/dive-deeper
+    steps:
+      - name: Get code
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint code
+        run: npm run lint
+      - name: Test code
+        run: npm run test
+      - name: Build code
+        run: npm run build
