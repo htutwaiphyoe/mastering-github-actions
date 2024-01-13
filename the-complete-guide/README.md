@@ -112,3 +112,5 @@ artifacts => output assets from jobs like build folder
 [actions/upload-artifact](https://github.com/actions/upload-artifact)
 
 with: => additional configuration
+
+[download-artifact](https://github.com/actions/download-artifact)

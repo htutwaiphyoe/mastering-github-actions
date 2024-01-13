@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dist
-          path: dist
+          path: ./the-complete-guide/job-artifact/dist
   deploy:
     needs: build
     runs-on: ubuntu-latest
