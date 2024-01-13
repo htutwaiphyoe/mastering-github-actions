@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./the-complete-guide/test-example
+        working-directory: ./the-complete-guide/basic
     steps:
       - name: Get code
         uses: actions/checkout@v4
