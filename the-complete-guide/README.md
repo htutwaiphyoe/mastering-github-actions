@@ -72,3 +72,7 @@ github actions runs on github servers, don't run on github repository, so need t
 nodejs install => action/setup-node
 
 [setup-node](https://github.com/actions/setup-node)
+
+parallel jobs => default
+
+sequential jobs => needs: jobName / [job1, job2] => if one job fails, other jobs will not run
