@@ -58,3 +58,17 @@ steps => step to execute => start with - and key/value pairs
 step has name and action to run
 
 run => run on console
+
+## 06. Events (Workflow Triggers)
+
+repository related events => push, pull_request
+
+[events-that-trigger-workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows)
+
+github actions runs on github servers, don't run on github repository, so need to get code at first step
+
+[Action for checking out a repo](https://github.com/actions/checkout)
+
+nodejs install => action/setup-node
+
+[setup-node](https://github.com/actions/setup-node)
