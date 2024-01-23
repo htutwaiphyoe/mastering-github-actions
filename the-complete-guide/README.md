@@ -16,3 +16,11 @@ Github actions handle two features
 
 1. CI/CD => continuous integration & continuous deployment => automate code testing, building and deploying
 2. Repository management => automate code review, issues
+
+## Github
+
+Git => an open-source version system => manage source code changes => commit, branch
+
+Github => a cloud-based git repository and services provider
+
+Github actions => Automate CI/CD
