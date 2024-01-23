@@ -36,3 +36,25 @@ Steps => steps are contained in jobs => shell script or action => custom or thir
 Workflows > Jobs > Steps
 
 Trigger => runs workflows on certain events
+
+## 05. Workflows in action
+
+repository/.github/workflows/[name].yml
+
+name => workflowName
+
+on => events that trigger workflow runs
+
+workflow_dispatch => manual trigger event
+
+jobs => work to do
+
+runs-on => runner
+
+[github-hosted-runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners)
+
+steps => step to execute => start with - and key/value pairs
+
+step has name and action to run
+
+run => run on console
