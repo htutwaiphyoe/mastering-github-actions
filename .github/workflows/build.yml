@@ -1,0 +1,19 @@
+name: Practice Workflow
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./the-complete-guide/practice
+    steps:
+      - name: Get code
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm ci
+      - name: Run lint
+        run: npm run lint
+      - name: Run test
+        run: npm run test
+      - name: Generate build
+        run: npm run build

@@ -76,3 +76,5 @@ nodejs install => action/setup-node
 parallel jobs => default
 
 sequential jobs => needs: jobName / [job1, job2] => if one job fails, other jobs will not run
+
+nodejs installation is not required
