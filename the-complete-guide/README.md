@@ -2,6 +2,8 @@
 
 Course by Maximilian
 
+[github repo](https://github.com/academind/github-actions-course-resources)
+
 ## 01. Introduction
 
 Github actions => a workflow automation service by Github
@@ -78,3 +80,27 @@ parallel jobs => default
 sequential jobs => needs: jobName / [job1, job2] => if one job fails, other jobs will not run
 
 nodejs installation is not required
+
+## Diving Deeper Workflows & Events
+
+multiple events => on: [event1, event2]
+
+can control with branches
+
+events have activity types and filters
+
+activity types => pull_request => opened, closed
+
+filters => push => branches
+
+eventName:
+    types: [action1, action2]
+    types:
+        - action1
+        - action2
+
+push:
+    branches: [branch1]
+        - branch1 (main, dev-* (dev-stag), feat/** (feat/login, feat/auth/login))
+    paths:
+        - 'file-path'
