@@ -104,3 +104,11 @@ push:
         - branch1 (main, dev-* (dev-stag), feat/** (feat/login, feat/auth/login))
     paths:
         - 'file-path'
+
+## Job Artifacts
+
+artifacts => output assets from jobs like build folder
+
+[actions/upload-artifact](https://github.com/actions/upload-artifact)
+
+with: => additional configuration
